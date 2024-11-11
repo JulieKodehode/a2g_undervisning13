@@ -1,0 +1,31 @@
+/* External CSS */
+
+/* body is a CSS Selector */
+/* {} idicates a CSS Declaration */
+body {
+  /* property:value; is a CSS Rule */
+  margin: 0;
+}
+
+header {
+  border-bottom: 5px solid black;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  list-style-type: none;
+  gap: 20px;
+  padding: 0 10px;
+}
+
+main {
+  height: 100vh;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
