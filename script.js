@@ -30,6 +30,13 @@ function simpleCalculator(num1, num2) {
 const viewCalculation = document.querySelector("#viewCalculation");
 console.log(viewCalculation);
 
+// Correct way using an anonymous function to activate the function we want to execute.
+viewCalculation.addEventListener("click", function () {
+    simpleCalculator(3, 4)
+});
+
+
+// Error handling: 
 // Passing simpleCalculator(3, 4) in the eventListner parameter calls the function immediately, instead of setting it as a click event handler.
 //viewCalculation.addEventListener("click", simpleCalculator(3, 4));
 
@@ -40,8 +47,3 @@ console.log(viewCalculation);
     console.log(sum);
     simpleCalculator(3, 4)
 })*/
-
-// Correct way using an anonymous function to activate the function we want to execute.
-viewCalculation.addEventListener("click", function () {
-    simpleCalculator(3, 4)
-});
